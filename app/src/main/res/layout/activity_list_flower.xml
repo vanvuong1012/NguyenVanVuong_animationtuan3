@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#97EDE5"
+    tools:context=".list_flower">
+
+    <ImageView
+        android:id="@+id/img_lavender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="40dp"
+        android:transitionName="fade"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/removebg_flower_1" />
+
+    <ImageView
+        android:id="@+id/img_light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="56dp"
+        android:transitionName="fade"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_lavender"
+        app:srcCompat="@drawable/removebg_plant_b_1" />
+
+    <ImageView
+        android:id="@+id/img_yellow"
+        android:layout_width="114dp"
+        android:layout_height="141dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="44dp"
+        android:transitionName="fade"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_light"
+        app:srcCompat="@drawable/remove_bg" />
+
+    <ImageView
+        android:id="@+id/img_tree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="72dp"
+        android:transitionName="fade"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_yellow"
+        app:srcCompat="@drawable/removebg_preview_1" />
+
+    <TextView
+        android:id="@+id/Laven1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="16dp"
+        android:text="Lavender"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/img_lavender"
+        app:layout_constraintTop_toTopOf="@+id/img_lavender" />
+
+    <TextView
+        android:id="@+id/price1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="10$"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/img_lavender"
+        app:layout_constraintEnd_toEndOf="@+id/Laven1"
+        app:layout_constraintHorizontal_bias="0.553"
+        app:layout_constraintStart_toStartOf="@+id/Laven1" />
+
+    <TextView
+        android:id="@+id/lavender2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="8dp"
+        android:text="Lavender Light"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/img_light"
+        app:layout_constraintTop_toTopOf="@+id/img_light" />
+
+    <TextView
+        android:id="@+id/price2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:text="10$"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/img_light"
+        app:layout_constraintEnd_toEndOf="@+id/lavender2"
+        app:layout_constraintHorizontal_bias="0.537"
+        app:layout_constraintStart_toStartOf="@+id/lavender2" />
+
+    <TextView
+        android:id="@+id/yellow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:text="Yellow"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/img_yellow"
+        app:layout_constraintTop_toTopOf="@+id/img_yellow" />
+
+    <TextView
+        android:id="@+id/price3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:text="10$"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/img_yellow"
+        app:layout_constraintEnd_toEndOf="@+id/yellow"
+        app:layout_constraintHorizontal_bias="0.656"
+        app:layout_constraintStart_toStartOf="@+id/yellow" />
+
+    <TextView
+        android:id="@+id/tree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:text="Leaf Tree"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/img_tree"
+        app:layout_constraintTop_toTopOf="@+id/img_tree" />
+
+    <TextView
+        android:id="@+id/price4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="10$"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/img_tree"
+        app:layout_constraintEnd_toEndOf="@+id/tree"
+        app:layout_constraintHorizontal_bias="0.614"
+        app:layout_constraintStart_toStartOf="@+id/tree" />
+</androidx.constraintlayout.widget.ConstraintLayout>
